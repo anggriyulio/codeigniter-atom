@@ -1,0 +1,8 @@
+'.php':
+  'Flash Data':
+    'prefix': 'ciflash'
+    'body': "\$this->session->flashdata('${1:name}');$0"
+
+    'Set Flash Data':
+      'prefix': 'cisetflash'
+      'body': "\$this->session->set_flashdata('${1:name}', '${2:value}');$0"
