@@ -1,0 +1,90 @@
+'.php':
+	# Load the database
+  	'Codeigniter Load Database':
+    	'prefix': 'cidbload'
+    	'body': "$this->load->database();"
+
+    # Standard Query
+  	'Codeigniter Standar Query':
+    	'prefix': 'cidbquery'
+    	'body': "$this->db->query('${1:SQL Query}');$0"
+
+    # Database AR Insert
+    'Codeigniter AR insert':
+    	'prefix': 'cidbinsert'
+    	'body': "$this->db->insert('${1:Table}', ${2:$data});$0"
+
+     # Database AR Insert
+    'Codeigniter AR insert batch':
+    	'prefix': 'cidbinsertbatch'
+    	'body': "$this->db->insert_batch('${1:Table}', ${2:$data});$0"
+
+    # Database AR Update
+    'Codeigniter AR update':
+    	'prefix': 'cidbupdate'
+    	'body': "$this->db->update('${1:Table}', ${2:$data});$0"
+
+    # Database AR Join
+    'Codeigniter AR Join':
+    	'prefix': 'cidbjoin'
+    	'body': "		
+    	$this->db->join('${1:Table}', '${2:table.column} ${3:=} ${4:table.column}'${5:, 'left'});$0"
+
+   # Database Limit
+    'Codeigniter AR limit':
+    	'prefix': 'cidblimit'
+    	'body': "$this->db->limit('${1:num};$0"
+
+    # Database Limit
+    'Codeigniter AR select':
+    	'prefix': 'cidbselect'
+    	'body': "$this->db->select('${1:field1, field2}');"
+
+    
+
+    # Database Get
+    'Codeigniter AR Get':
+    	'prefix': 'cidbget'
+    	'body': "$this->db->get('${1:Table}'${2:, ${3:limit}, ${4:offset}});$0"
+
+
+    # Database where
+    'Codeigniter AR where':
+    	'prefix': 'cidbwhere'
+    	'body': "$this->db->where('${1:Field}', ${2:$Value})"
+
+    # Database Group
+    'Codeigniter AR group':
+    	'prefix': 'cidbgroup'
+    	'body': "$this->db->group_by('${1:title}');$0"
+
+    # Database AR delete
+    'Codeigniter AR delete':
+    	'prefix': 'cidbdelete'
+    	'body': "$this->db->delete('${1:tablename}');$0"
+
+
+    
+
+
+    # Query Helper Methods
+    # Information From Executing a Query
+  	'Database Insert Id':
+    	'prefix': 'cidbinsertid'
+    	'body': "$this->db->insert_id();$0"
+
+    'Database Affected Rows':
+    	'prefix': 'cidbaffected'
+    	'body': "$this->db->affected_rows();$0"
+
+    'Database last Query':
+    	'prefix': 'cidblast'
+    	'body': "$this->db->last_query();$0"
+
+    # Information About Your Database
+    'Database Count All':
+    	'prefix': 'cidbcount'
+    	'body': "$this->db->count_all('${1:tablename}');$0"
+    
+    
+    	

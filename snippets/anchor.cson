@@ -1,0 +1,6 @@
+'.php':
+  'Codeigniter Anchor':
+    'prefix': 'cianchor'
+    'body': "anchor('${1:url}', '${2:linkname}', '${3:attributes}');$0"
+
+

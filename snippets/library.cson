@@ -1,0 +1,19 @@
+'.php':
+  # Create Codeigniter Library
+  'Codeigniter Library':
+    'prefix': 'cilibrary'
+    'body': """
+      <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+      class ${1:Classname} {
+
+        public function method()
+        {
+          parent::__construct();
+          ${2://Codeigniter : Write Less Do More}
+        }
+
+      }
+    """
+
+  

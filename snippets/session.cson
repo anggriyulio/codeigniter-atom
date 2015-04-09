@@ -1,0 +1,25 @@
+'.php':
+  # Library Session
+  'Session Userdata':
+    'prefix': 'cisesdata'
+    'body': "\$this->session->userdata('${1:item}');$0"
+
+  'Session All Userdata':
+    'prefix': 'cisesall'
+    'body': "\$this->session->all_userdata();$0"
+
+  'Session Set Userdata':
+    'prefix': 'cisesset'
+    'body': """
+      \$array = array(
+      	'${1:key}' => '${2:value}'
+      );$0
+    """
+
+  'Session unsey userdata':
+    'prefix': 'cisesunset'
+    'body': "\$this->session->unset_userdata('${1:some_name}');$0"
+
+  'Session destroy':
+    'prefix': 'cisesdestroy'
+    'body': "\$this->session->sess_destroy();$0"

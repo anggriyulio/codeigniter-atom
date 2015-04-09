@@ -1,0 +1,55 @@
+'.php':
+  # Form helper function
+  'Form Open':
+    'prefix': 'ciformopen'
+    'body': "form_open('${1:url}', '', ${2:$hidden});$0"
+
+  'Form Close':
+    'prefix': 'ciformclose'
+    'body': "form_close();$0"
+
+  'Form checkbox':
+    'prefix': 'ciformcheckbox'
+    'body': "form_checkbox(${1:name}, ${2:value}, TRUE);$0"
+
+  'Form dropdown':
+    'prefix': 'ciformdropdown'
+    'body': "form_dropdown('${1:name}', \$options, '${2:default}');$0"
+
+  'Form input':
+    'prefix': 'ciforminput'
+    'body': "form_input('${1:name}', '${2:value}'${3:, \$attributes});$0"
+
+  'Form hidden':
+    'prefix': 'ciformhidden'
+    'body': "form_hidden('${1:name}', '${2:value}');$0"
+
+  'Form text':
+    'prefix': 'ciformtext'
+    'body': "form_textarea('${1:name}', '${2:value}', '${3:attributs}');$0"
+
+  'Form upload':
+    'prefix': 'ciformupload'
+    'body': "form_upload('${1:name}');$0"
+
+
+  'Form label':
+    'prefix': 'ciformlabel'
+    'body': "form_label('${1:What is your Name}', '${2:username}'${3:, \$attributes});$0"
+
+  'Form password':
+    'prefix': 'ciformpass'
+    'body': "form_password('${1:name}', '${2:value}');$0"
+
+  'Form submit':
+    'prefix': 'ciformsubmit'
+    'body': "form_submit('${1:name}', '${2:value}');$0"
+
+  # Form Validition
+  'Run form validation':
+    'prefix': 'cirun'
+    'body': "\$this->form_validation->run()$0"
+
+  'Run set validation':
+    'prefix': 'civalidation'
+    'body': "\$this->form_validation->set_rules('${1:fieldname}', '${2:fieldlabel}', '${3:trim|required|min_length[5]|max_length[12]|xss_clean}');$0"

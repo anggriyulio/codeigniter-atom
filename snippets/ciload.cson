@@ -1,0 +1,16 @@
+'.php':
+  'Load View':
+    'prefix': 'ciloadview'
+    'body': "$this->load->view('${1:viewname}', ${2:$data});$0"
+
+  'Load Model':
+    'prefix': 'ciloadmodel'
+    'body': "$this->load->model(array('${1:model}'));$0"
+
+  'Load helper':
+    'prefix': 'ciloadhelper'
+    'body': "$this->load->helper(array('${1:helper}'));$0"
+
+  'Load library':
+    'prefix': 'ciloadlibrary'
+    'body': "$this->load->library('${1:library}' ${2:, ${3:$config}});$0"
