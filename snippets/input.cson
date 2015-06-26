@@ -1,0 +1,26 @@
+'.php':
+  # Codeigniter Input Class
+  'Codeigniter GET':
+    'prefix': 'ciget'
+    'body': "$this->input->get('${1:}');$0"
+
+  'Codeigniter POST':
+    'prefix': 'cipost'
+    'body': "$this->input->post('${1:}');$0"
+
+  'Codeigniter GET_POST':
+    'prefix': 'cigetpost'
+    'body': "$this->input->get_post('${1:}');$0"
+
+  'Codeigniter Fetch Cookie Data':
+    'prefix': 'cicookie'
+    'body': "$this->input->cookie('${1:}', TRUE);$0"
+
+  'Codeigniter Fetch Server Data':
+    'prefix': 'cicookie'
+    'body': "$this->input->server('${1:}');$0"
+
+  'Codeigniter Set Data':
+    'prefix': 'cicookie'
+    'body': "$cookie = array('name' => 'Name','value' => 'Value','expire' => '86500','domain' => '.some-domain.com','path' => '/','prefix' => 'myprefix_','secure' => TRUE);
+    \n$this->input->set_cookie($cookie);$0"
