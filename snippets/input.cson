@@ -17,10 +17,10 @@
     'body': "$this->input->cookie('${1:}', TRUE);$0"
 
   'Codeigniter Fetch Server Data':
-    'prefix': 'cicookie'
+    'prefix': 'ciserver'
     'body': "$this->input->server('${1:}');$0"
 
-  'Codeigniter Set Data':
-    'prefix': 'cicookie'
+  'Codeigniter Set Cookie Data':
+    'prefix': 'cisetcookie'
     'body': "$cookie = array('name' => 'Name','value' => 'Value','expire' => '86500','domain' => '.some-domain.com','path' => '/','prefix' => 'myprefix_','secure' => TRUE);
     \n$this->input->set_cookie($cookie);$0"
