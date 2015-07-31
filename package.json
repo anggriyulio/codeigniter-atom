@@ -1,6 +1,6 @@
 {
   "name": "codeigniter",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Codeigniter snippets for Atom Editor",
   "repository": "https://github.com/anggriyulio/codeigniter-atom",
   "engines": {
