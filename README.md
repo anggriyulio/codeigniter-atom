@@ -1,2 +1,2 @@
-# codeigniter-atom
-Codeigniter Snippet for Atom
+# Codeigniter Atom
+Codeigniter Snippet for Atom Editor
