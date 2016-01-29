@@ -1,7 +1,20 @@
 # Codeigniter Atom
+
 Codeigniter Snippet for Atom Editor
 
-## Snippets
+### Installation
+Go to `Atom > Preferences > Install` then search for `codeigniter-atom`. Alternative you can run command 
+`apm install codeigniter-atom`
+
+### Contributing
+
+1. Fork it
+2. Create feature branch: `git checkout -b new-feature`
+3. Commit changes: `git commit -m 'Comments'`
+4. Push to the branch: `git push origin new-feature`
+5. Submit pull request
+
+### Snippets
 
 |Trigger|Name|
 | ---- |----|
@@ -54,12 +67,3 @@ Codeigniter Snippet for Atom Editor
 |cisetcookie|Set Cookie Data|
 |civalidation|Run set validation|
 |cirun|Run form validation|
-
-
-## Contributing
-
-1. Fork it
-2. Create feature branch: `git checkout -b new-feature`
-3. Commit changes: `git commit -m 'Comments'`
-4. Push to the branch: `git push origin new-feature`
-5. Submit pull request
