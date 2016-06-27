@@ -12,6 +12,10 @@
     'prefix': 'cigetpost'
     'body': "$this->input->get_post('${1:}');$0"
 
+  'Codeigniter POST_GET':
+    'prefix': 'cipostget'
+    'body': "$this->input->post_get('${1:}');$0"
+
   'Codeigniter Fetch Cookie Data':
     'prefix': 'cicookie'
     'body': "$this->input->cookie('${1:}', TRUE);$0"
