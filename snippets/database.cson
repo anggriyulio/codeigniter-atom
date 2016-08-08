@@ -27,7 +27,7 @@
     # Database AR Join
     'Codeigniter AR Join':
     	'prefix': 'cidbjoin'
-    	'body': "		
+    	'body': "
     	$this->db->join('${1:Table}', '${2:table.column} ${3:=} ${4:table.column}'${5:, 'left'});$0"
 
    # Database Limit
@@ -40,7 +40,7 @@
     	'prefix': 'cidbselect'
     	'body': "$this->db->select('${1:field1, field2}');"
 
-    
+
 
     # Database Get
     'Codeigniter AR Get':
@@ -64,8 +64,6 @@
     	'body': "$this->db->delete('${1:tablename}');$0"
 
 
-    
-
 
     # Query Helper Methods
     # Information From Executing a Query
@@ -85,6 +83,16 @@
     'Database Count All':
     	'prefix': 'cidbcount'
     	'body': "$this->db->count_all('${1:tablename}');$0"
-    
-    
-    	
+
+    # String Escape
+    'Database Return Escape String with quote':
+    	'prefix': 'cidbesp'
+    	'body': "$this->db->escape('${1:str}');$0"
+
+    'Database Return Escape String no quote':
+    	'prefix': 'cidbespstr'
+    	'body': "$this->db->escape_str('${1:str}');$0"
+
+    'Database Return Escape Like':
+    	'prefix': 'cidbesplike'
+    	'body': "$this->db->escape_like_str('${1:str}');$0"
