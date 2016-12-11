@@ -13,10 +13,48 @@
           ${3://Codeigniter : Write Less Do More}
         }
 
-        function index()
+        public function index()
         {
           $0
         }
+
+        // Please implement naming good CRUD controller function below
+
+      	// Showing form to read specific data based on id
+      	public function read($id)
+      	{
+      		# code...
+      	}
+
+      	// Showing form to insert data
+      	public function create()
+      	{
+      		# code...
+      	}
+
+      	// Process insert data
+      	public function store()
+      	{
+      		# code...
+      	}
+
+      	// Showing form to update data
+      	public function edit($id)
+      	{
+      		# code...
+      	}
+
+      	// Process update data
+      	public function update($id)
+      	{
+      		# code...
+      	}
+
+      	// Process delete data
+      	public function delete($id)
+      	{
+      		# code...
+      	}
 
       }
     """
