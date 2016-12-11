@@ -13,5 +13,35 @@
           ${3://Codeigniter : Write Less Do More}
         }
 
+        // get all data from table.
+        public function get_all()
+        {
+          # code...
+        }
+
+        // get specific data based on id table
+        public function get_by_id($id)
+        {
+          # code...
+        }
+
+        // insert data to the table
+        public function insert($data)
+        {
+          # code...
+        }
+
+        // update data from the table based on id data
+        public function update($id, $data)
+        {
+          # code...
+        }
+
+        // delete data from the table based on id data
+        public function delete($id)
+        {
+          # code...
+        }
+
       }
     """
