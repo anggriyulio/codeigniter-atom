@@ -40,7 +40,10 @@
     	'prefix': 'cidbselect'
     	'body': "$this->db->select('${1:field1, field2}');"
 
-
+    # Database from
+    'CodeIgniter AR from':
+      'prefix': 'cidbfrom'
+      'body': "$this->db->from('${1:field1}');"
 
     # Database Get
     'Codeigniter AR Get':
