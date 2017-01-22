@@ -33,7 +33,7 @@
    # Database Limit
     'Codeigniter AR limit':
     	'prefix': 'cidblimit'
-    	'body': "$this->db->limit('${1:num};$0"
+    	'body': "$this->db->limit('${1:num}');$0"
 
     # Database Limit
     'Codeigniter AR select':
@@ -51,7 +51,7 @@
     # Database where
     'Codeigniter AR where':
     	'prefix': 'cidbwhere'
-    	'body': "$this->db->where('${1:Field}', ${2:$Value})"
+    	'body': "$this->db->where('${1:Field}', ${2:$Value});$0"
 
     # Database Group
     'Codeigniter AR group':
