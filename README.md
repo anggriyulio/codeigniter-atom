@@ -1,4 +1,4 @@
-# Codeigniter Atom
+# [Codeigniter Atom](https://atom.io/packages/codeigniter)
 
 Codeigniter Snippet for Atom Editor
 
@@ -67,3 +67,7 @@ Go to `Atom > Preferences > Install` then search for `codeigniter-atom`. Alterna
 |cisetcookie|Set Cookie Data|
 |civalidation|Run set validation|
 |cirun|Run form validation|
+
+## LICENSE
+
+The MIT License (MIT)
