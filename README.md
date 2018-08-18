@@ -6,6 +6,8 @@ Codeigniter Snippet for Atom Editor
 Go to `Atom > Preferences > Install` then search for `codeigniter-atom`. Alternative you can run command 
 `apm install codeigniter-atom`
 
+If you are using Atom v1.2x or greater consider go to Atom > Packages > Setting View > Install Packages/Themes then search for 'codeigniter-atom'.
+
 ### Contributing
 
 1. Fork it
