@@ -1,0 +1,52 @@
+'.php':
+  'Codeigniter Email Generate':
+    'prefix': 'ciemail'
+    'body': """
+      $this->load->library('email');
+
+      $this->email->from('${1:your@example.com}', '${2:Your Name}');
+      $this->email->to('${3:someone@example.com}');
+      ${4:$this->email->cc('${5:another@another-example.com}');}
+      ${6:$this->email->bcc('${7:another@another-example.com}');}
+
+      $this->email->subject('${8:Email Test}');
+      $this->email->message(${9:'Testing the email class.'});
+
+      $this->email->send();$0
+    """
+
+  'Email From':
+    'prefix': 'ciemailfrom'
+    'body': "\$this->email->from('${1:email}', '${2:name}');$0"
+
+  'Email Reply To':
+    'prefix': 'ciemailreply'
+    'body': "\$this->email->reply_to('${1:email}', '${2:name}');$0"
+
+  'Email To':
+    'prefix': 'ciemailto'
+    'body': "\$this->email->to('${1:email}');$0"
+
+  'Email CC':
+    'prefix': 'ciemailcc'
+    'body': "\$this->email->cc('${1:email}');$0"
+
+  'Email BCC':
+    'prefix': 'ciemailbcc'
+    'body': "\$this->email->bcc('${1:email}');$0"
+
+  'Email Subject':
+    'prefix': 'ciemailsub'
+    'body': "\$this->email->subject('${1:mail subject}');$0"
+
+  'Email Body':
+    'prefix': 'ciemailbody'
+    'body': "\$this->email->message('${1:text}');$0"
+
+  'Email Send':
+    'prefix': 'ciemailsend'
+    'body': "\$this->email->send();$0"
+
+  'Email Attach':
+    'prefix': 'ciemailatt'
+    'body': "\$this->email->attach('${1:file}');$0"
